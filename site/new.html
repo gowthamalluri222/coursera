@@ -3,13 +3,31 @@
 <head>
 	<meta charset="utf-8">
 	<title>
-		heading elements
+		form
 	</title>
-<body>
-	<h1>hi</h1>
-	<h2>this</h2>
-	<h3>is</h3>
-	<h4>alluri</h4>
+	<body>
+		<form>
+			<div>
+			<input type="text" placeholder="full name" name="full name">
+			<input type="password" name="password" placeholder="password">
+		</div>
+		<div>
+			<input name="colour" type="radio" value="red">red
+			<input type="radio" name="colour" value="blue">blue
+			<input type="radio" name="colour" value="others">others
+		</div>
+		<div>
+			<input name="country" list="countries" placeholder="country">
+			<datalist id="countries">
+				<option value="india">
+				<option value="uk">
+				<option value="usa">	
+			</datalist>
+		</div>
+		<div>
+          <input type="submit">			
+		</div>
+		</form>
 </body>	
 </head>
 </html>
